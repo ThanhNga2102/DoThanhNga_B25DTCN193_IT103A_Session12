@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câu hỏi hay gặp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background: #f8fafc;
+            color: #1e293b;
+        }
+
+        .faq {
+            padding: 80px 20px;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .faq-badge {
+            display: inline-block;
+            background: #eef2ff;
+            color: #6366f1;
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+
+        .faq h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .faq-desc {
+            color: #64748b;
+            margin-bottom: 40px;
+            font-size: 15px;
+        }
+
+        .faq-list {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .queston {
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .queston:last-child {
+            border-bottom: none;
+        }
+
+        .answer{
+            list-style: none;
+            cursor: pointer;
+            padding: 18px 24px;
+            font-size: 15px;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #6366f1;
+            color: #ffffff;
+        }
+
+        .queston:not([open]) summary {
+            background: #ffffff;
+            color: #1e293b;
+        }
+
+        .answer::-webkit-details-marker {
+            display: none;
+        }
+
+        .icon {
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid currentColor;
+            border-bottom: 2px solid currentColor;
+            transform: rotate(45deg);
+            transition: transform 0.3s;
+        }
+
+        .queston[open] .icon {
+            transform: rotate(-135deg);
+        }
+
+        .queston p {
+            padding: 16px 24px 20px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #475569;
+            background: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            .faq h2 {
+                font-size: 26px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .answer {
+                padding: 16px;
+                font-size: 14px;
+            }
+
+            .queston p {
+                padding: 14px 16px 18px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="faq">
+        <div class="faq-container">
+            <span class="faq-badge">Câu hỏi thường gặp</span>
+            <h2>Bạn có thắc mắc?</h2>
+            <p class="faq-desc">Chúng tôi sẵn sàng giải đáp mọi thắc mắc của bạn</p>
+
+            <div class="faq-list">
+                <div class="question">
+                    <div class="answer">
+                        Tôi có thể học trên điện thoại không?
+                        <span class="icon"></span>
+                    </div>
+                    <p>
+                        Có, nền tảng của chúng tôi hoàn toàn tương thích với mọi thiết bị
+                        bao gồm điện thoại, tablet và máy tính. Bạn có thể học mọi lúc,
+                        mọi nơi.
+                    </p>
+                </div>
+
+                <div class="question">
+                    <div class="answer">
+                        Chứng chỉ có được công nhận không?
+                        <span class="icon"></span>
+                    </div>
+                    <p>
+                        Chứng chỉ hoàn thành khóa học được cấp bởi EduLearn và có giá trị
+                        sử dụng trong học tập cũng như công việc.
+                    </p>
+                </div>
+
+                <div class="question">
+                    <div class="answer">
+                        Tôi có thể hoàn tiền nếu không hài lòng?
+                        <span class="icon"></span>
+                    </div>
+                    <p>
+                        Bạn có thể yêu cầu hoàn tiền trong vòng 7 ngày nếu không hài lòng
+                        với chất lượng khóa học.
+                    </p>
+                </div>
+
+                <div class="question">
+                    <div class="answer">
+                        Làm thế nào để liên hệ với giảng viên?
+                        <span class="icon"></span>
+                    </div>
+                    <p>
+                        Bạn có thể đặt câu hỏi trực tiếp trong bài học hoặc gửi tin nhắn
+                        qua hệ thống hỗ trợ của nền tảng.
+                    </p>
+                </div>
+
+                <div class="question">
+                    <div class="answer">
+                        Tôi có thể tải video để xem offline không?
+                        <span class="icon"></span>
+                    </div>
+                    <p>
+                        Hiện tại nền tảng chưa hỗ trợ tải video offline, tuy nhiên bạn có
+                        thể học trực tuyến mọi lúc.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

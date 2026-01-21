@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN04</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        .footer {
+            background: linear-gradient(180deg, #0b1220, #0e1627);
+            color: #cbd5e1;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .footer-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .footer-top {
+            flex: 2;
+            min-width: 260px;
+        }
+
+        .footer-item h4 {
+            color: #ffffff;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        .footer-item ul {
+            list-style: none;
+        }
+
+        .footer-item ul li {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .footer-item ul li a {
+            text-decoration: none;
+            color: #cbd5e1;
+            transition: color 0.3s;
+        }
+
+        .footer-item ul li a:hover {
+            color: #38bdf8;
+        }
+
+        .footer-top h3 {
+            color: #38bdf8;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .footer-top p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .contact li {
+            font-size: 14px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            flex-wrap: wrap;
+            font-size: 13px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .footer-bottom .logo p {
+            text-align: left;
+        }
+        .footer-bottom .design p {
+            text-align: right;
+        }
+        
+        @media (max-width: 992px) {
+            .footer-container {
+                gap: 30px;
+            }
+
+            .footer-brand {
+                flex: 100%;
+            }
+
+            .footer-item {
+                flex: 1 1 45%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <h3>EduLearn</h3>
+                <p>Nền tảng học trực tuyến hàng đầu.</p>
+            </div>
+
+            <div class="footer-item">
+                <h4>Khóa học</h4>
+                <ul>
+                    <li>Lập trình</li>
+                    <li>Thiết kế</li>
+                    <li>Marketing</li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h4>Hỗ trợ</h4>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Chính sách</li>
+                    <li>Bảo mật</li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h4>Liên hệ</h4>
+                <li>📧 info@edulearn.vn</li>
+                <li>📞 1900 1234</li>
+                <li>📍 Hà Nội, Việt Nam</li>
+            </div>
+            <div class="footer-bottom">
+                <p class="logo">© 2025 EduLearn. Tất cả quyền được bảo lưu.</p>
+                &nbsp;
+                <p class="design">Được thiết kế với ❤️ bởi EduLearn Team</p>
+            </div>
+    </footer>
+    </div>
+    </footer>
+
+</body>
+
+</html>
